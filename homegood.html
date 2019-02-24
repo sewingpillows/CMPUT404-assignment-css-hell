@@ -7,16 +7,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
-<body id="index" class="home">
+<body>
     <div class = "wrapper">
         <div class = "header">
             <h1>Hi.</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99 99" preserveAspectRatio="none">
-                <polygon class="svg--lg" fill="white" points="0,0 0,33 45,33 50,100 55,33 100,33 100,100 0,100"/>
+            <svg id = "pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99 99" preserveAspectRatio="none">
+                <polygon class="svg" fill="white" points="0,0 0,33 45,33 50,100 55,33 100,33 100,100 0,100"/>
             </svg>
+        <div id = 'target'></div>
         </div>
         <div class = "starter">
-            <img src="static/myself2.png" alt="Italian Trulli">
+            <img src="static/myself2.png" alt="Allison Boukall">
             <div class = "name"> Allison Boukall</div>
             <div id = "section">
             <ul class = "sections_Title">
@@ -37,9 +38,9 @@
         <div class = "th" id = "about_content" style="display: none;">
             <p class = "things" >I had worked for several years within the software industry on the business-end 
             before jumping over to the technical side because of a growing interest in how everything was put together. 
-            I 'tip-toed' into software, first by taking a couple online introduction course, then enrolling into school part-time, 
+            I 'tip-toed' into software, first by taking a couple online introduction courses, then enrolling into school part-time, 
             and finally committing to school full-time to complete a degree. Alongside full-time school, I work as a quality assurance analyst, designing and implementing 
-            best practices, automated testing, and quality assurance process. </p>
+            best practices, automated testing, and quality assurance processes. </p>
         </div>
         <div class = "th" id = "more_content" style="display: none;">
             <ul> 
@@ -101,7 +102,7 @@
             }
                
         document.getElementById(id+"_content").style.display = "flex";
-        document.getElementById(id+"_content").scrollIntoView();
+        document.getElementById('target').scrollIntoView();
         }
         var thing = document.getElementsByClassName("sections_Titles");
         for (var i = 0; i < thing.length; i++) {
