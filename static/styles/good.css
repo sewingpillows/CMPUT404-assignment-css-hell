@@ -58,10 +58,8 @@ font-size: .9em;
  background-color: #E0596B;
 }
 #target{
-  transform:translateY(50);
   width: 0px;
   height: min-content;
-  transform: translateY(324);
   position: absolute;
   bottom: 60px;
 }

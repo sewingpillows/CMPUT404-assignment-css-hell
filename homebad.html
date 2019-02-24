@@ -5,80 +5,106 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="static/styles/bad.css" />
 </head>
-<body id="index" class="home">
+<body>
     <div class = "wrapper">
+        <div class = "header">
+            <h1>Hi.</h1>
+            <svg id = "pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99 99" preserveAspectRatio="none">
+                <polygon class="svg" fill="white" points="0,0 0,33 45,33 50,100 55,33 100,33 100,100 0,100"/>
+            </svg>
+        <div id = 'target'></div>
+        </div>
         <div class = "starter">
-            <div class = "photo">
-                <img src="static/myself2.png" alt="Italian Trulli">
-             </div>
+            <img src="static/myself2.png" alt="Allison Boukall">
             <div class = "name"> Allison Boukall</div>
-        
-            <div class = "section">
-                <ul class = "sections_Title">
-                    <li class = "sections_Titles cross selectedTitle" id = "facts"> Facts </li>
-                    <li class = "sections_Titles cross" id = "about"> About Me</li>
-                    <li class = "sections_Titles cross" id = "more">  More Serious Things</li>
-                    <li class = "sections_Titles cross"id = "less">  Less Serious Things</li>
-                </ul>
+            <div id = "section">
+            <ul class = "sections_Title">
+                <li class = "sections_Titles selectedTitle" id = "general" > Essential Things</li>
+                <li class = "sections_Titles" id = "about"> Things about Me</li>
+                <li class = "sections_Titles" id = "more">  More Serious Things</li>
+                <li class = "sections_Titles" id = "less">  Less Serious Things</li>
+            </ul>
             </div>
         </div>
     <div id = "content">
-    <div class = "th about_me">
-        <p class = "things" id = "facts_content" style="display: none;">Ut vulputate lectus ut leo elementum laoreet. Praesent tempus 
-                lacus aliquam erat sollicitudin eleifend. Fusce eget enim sollicitudin, 
-                lobortis turpis a, congue neque. Aenean sed  sagittis urna. Sed nisl urna, 
-                pellentesque vitae urna at, placerat placerat risus.</p>
-    </div>
-    <div class = "th history">
-        <p class = "things" id = "about_content"  style="display: block;" >Ut vulputate lectus ut leo elementum laoreet. Praesent tempus 
-                lacus aliquam erat sollicitudin eleifend. Fusce eget enim sollicitudin, 
-                lobortis turpis a, congue neque. Aenean sed  sagittis urna. Sed nisl urna, 
-                pellentesque vitae urna at, placerat placerat risus.</p>
-    </div>
-    <div class = "th offerings">
-        <p class = "things"style= "display: none;" >
-            <ul id = "more_content">
-                <li> Experienced with  </li>
-                <li> Vestibulum suscipit nulla a nunc dignissim pellentesque.</li>
-                <li> Morbi eget turpis ultrices, imperdiet purus ac, lacinia eros.</li>
-                <li> Duis sit amet diam et nunc suscipit iaculis.</li>
-                <li> Nam congue ex sed orci dapibus scelerisque.</li>
+        <div class = "th" id = "general_content" style="display: flex;">
+            <p class = "things" >I am a Software Quality Assurance & Development Professional.
+                    In my work, I draw from an extensive background in quality assurance, design, and client management to provide a unique perspective
+                    when designing and implementing software. I’m driven by an enduring desire to produce and contribute to high quality 
+                    products and services across multiple platforms.</p>
+        </div>
+        <div class = "th" id = "about_content" style="display: none;">
+            <p class = "things" >I had worked for several years within the software industry on the business-end 
+            before jumping over to the technical side because of a growing interest in how everything was put together. 
+            I 'tip-toed' into software, first by taking a couple online introduction courses, then enrolling into school part-time, 
+            and finally committing to school full-time to complete a degree. Alongside full-time school, I work as a quality assurance analyst, designing and implementing 
+            best practices, automated testing, and quality assurance processes. </p>
+        </div>
+        <div class = "th" id = "more_content" style="display: none;">
+            <ul> 
+                <li>Education
+                    <ul>
+                        <li><span>BSC with Specialization in Computing Science -</span> University of Alberta </li>
+                        <li><span>Coursework:</span> Database optimization, Software Engineering, 
+                            Operating Systems, Compilers, Networks, Web Development, Networking, HCI, 
+                            Algorithms and Data Structures</li>
+                        </ul>
+                    </li>
+                    <li>School Projects
+                        <ul>
+                        <li>Designed and implemented an android application that allows 
+                        users to post tasks and apply for tasks. This collaborative project was managed 
+                        under AGILE principles.</li>
+                        <li>Designed and implemented a compiler for the Microsoft Language Dash utilizing Antlr and LLVM</li>
+                        <li>Implemented the nearest neighbor algorithm using R-trees for spatial data</li>
+                    </ul>
+                </li>
+                <li>Skillset
+                    <ul>
+                        <li><span>Fluent: </span>python, C, C++, java, PHP, SQL</li>
+                        <li><span>Proficient: </span>perl, bash, javascript, CSS, noSQL, MIPS Assembly, UNIX </li>
+                        <li><span>Tools: </span>Antlr, LLVM, Android Studio, 
+                        Adobe Creative Suite, Django, Bootstrap, Elasticsearch, Selenium </li>
+                    </ul>
+                </li>
             </ul>
-        </p>
+        </div>
+        <div class = " th" id = "less_content" style="display: none;">
+            <ul> 
+                <li>Books and yadda-yadda-yadda
+                    <ul>
+                        <li>I love books a bit too much</li>
+                        <li>I once owned a bookstore (see point above)</li>
+                        <li>I love money a bit more than I love books (see past tense on point above)</li>
+                        <li>For a while, I was an antique paper repairer for a book restorer, <a href="https://www.alexmcguckin.com/about">Alex McGuckin</a> and now know many pointless things about paper</li>
+                        <li>I'm an avid swimmer, biker (pedal kind only), and cross-country skier.</li>
+                    </ul>
+                </li> 
+            </ul>
+        </div>
     </div>
-    <div class = " th important_things">
-        <ul class = "things" id = "less_content" style="display: none;">
-                <li>I love books and reading a bit too much</li>
-                <li>I once owned a bookstore (see above)</li>
-                <li>I love money a bit more than I love books (see past tense on point above)</li>
-                <li>For a while, I was a paper repairer for this guy, https://www.alexmcguckin.com/about and now know some silly things about paper</li>
-        </ul>
-    </div>
-</div>
+    <div class="footer"></div>
 </div>
 </body>
-
 <script>
-    var thing = document.getElementsByClassName("sections_Titles");
     function myFunction(event) {
         var id= this.id;
-                for (var i = 0; i < el.length; i++) {
-            el[i].children[0].style.display= "none"
-        }
-        var neew = document.getElementById("selectedTitle").removeAttribute("id");
-        if (this != neew ){
-            this.setAttribute("id", "selectedTitle");
+        var neew = document.getElementsByClassName("selectedTitle");
+        neew[0].classList.remove("selectedTitle")
+        if (this != neew[0] ){
+            this.classList.add("selectedTitle");
         }
         el = document.getElementById("content").children;
         for (var i = 0; i < el.length; i++) {
-            el[i].children[0].style.display= "none"
+            el[i].style.display= "none"
+            }
+               
+        document.getElementById(id+"_content").style.display = "flex";
+        document.getElementById('target').scrollIntoView();
         }
-           
-        document.getElementById(id+"_content").style.display = "block";
-    }
-
-    for (var i = 0; i < thing.length; i++) {
-        thing[i].addEventListener("click", myFunction);
-    }
-    </script>
+        var thing = document.getElementsByClassName("sections_Titles");
+        for (var i = 0; i < thing.length; i++) {
+            thing[i].addEventListener("click", myFunction);
+        }
+</script>
 </html>

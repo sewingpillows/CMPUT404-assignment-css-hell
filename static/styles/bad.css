@@ -15,20 +15,30 @@ body {
 	  flex-direction: column;
 }
 
-.photo {
+h1 {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 1000;
+	padding-top: 50px;
+	color: #FF5722;
+}
+svg {
+	display: none;
+}
+
+img {
    align-self: center;
    animation: alien 12s infinite;
    width: 300px;
    padding-top: 40px;
 }
-.photo img{
-  width: 100%;
-}
+
 .th{
 	width: 50%;
 	background-color: coral;
 	 align-self: center;
-	 margin: 10px;
+	 margin-top: 70px;
 }
 p {
 	padding: 0 20px;
@@ -41,15 +51,22 @@ p {
     align-content: center;
 }
 
-.section {
+#section {
 	display: flex;
 	justify-content: center;
+}
+#target{
+  width: 0px;
+  height: min-content;
+  position: absolute;
+  bottom: 200px;
 }
 
 .sections_Title{
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 10px;
 	list-style: none;
 	display: flex;
 	justify-content: center;
@@ -66,7 +83,7 @@ p {
 	font-weight: 900;
 	line-height: 4em;
 }
-#selectedTitle {
+.selectedTitle {
 	color: #9C27B0;
 
 }
