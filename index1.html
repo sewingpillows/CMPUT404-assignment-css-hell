@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Allison Boukall - Assignment 3</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="static/styles/bad.css" />
+</head>
+<body id="index" class="home">
+    <div class = "wrapper">
+        <div class = "starter">
+            <div class = "photo">
+                <img src="static/myself2.png" alt="Italian Trulli">
+             </div>
+            <div class = "name"> Allison Boukall</div>
+        
+            <div class = "section">
+                <ul class = "sections_Title">
+                    <li class = "sections_Titles cross selectedTitle" id = "facts"> Facts </li>
+                    <li class = "sections_Titles cross" id = "about"> About Me</li>
+                    <li class = "sections_Titles cross" id = "more">  More Serious Things</li>
+                    <li class = "sections_Titles cross"id = "less">  Less Serious Things</li>
+                </ul>
+            </div>
+        </div>
+    <div id = "content">
+    <div class = "th about_me">
+        <p class = "things" id = "facts_content" style="display: none;">Ut vulputate lectus ut leo elementum laoreet. Praesent tempus 
+                lacus aliquam erat sollicitudin eleifend. Fusce eget enim sollicitudin, 
+                lobortis turpis a, congue neque. Aenean sed  sagittis urna. Sed nisl urna, 
+                pellentesque vitae urna at, placerat placerat risus.</p>
+    </div>
+    <div class = "th history">
+        <p class = "things" id = "about_content"  style="display: block;" >Ut vulputate lectus ut leo elementum laoreet. Praesent tempus 
+                lacus aliquam erat sollicitudin eleifend. Fusce eget enim sollicitudin, 
+                lobortis turpis a, congue neque. Aenean sed  sagittis urna. Sed nisl urna, 
+                pellentesque vitae urna at, placerat placerat risus.</p>
+    </div>
+    <div class = "th offerings">
+        <p class = "things"style= "display: none;" >
+            <ul id = "more_content">
+                <li> Experienced with  </li>
+                <li> Vestibulum suscipit nulla a nunc dignissim pellentesque.</li>
+                <li> Morbi eget turpis ultrices, imperdiet purus ac, lacinia eros.</li>
+                <li> Duis sit amet diam et nunc suscipit iaculis.</li>
+                <li> Nam congue ex sed orci dapibus scelerisque.</li>
+            </ul>
+        </p>
+    </div>
+    <div class = " th important_things">
+        <ul class = "things" id = "less_content" style="display: none;">
+                <li>I love books and reading a bit too much</li>
+                <li>I once owned a bookstore (see above)</li>
+                <li>I love money a bit more than I love books (see past tense on point above)</li>
+                <li>For a while, I was a paper repairer for this guy, https://www.alexmcguckin.com/about and now know some silly things about paper</li>
+        </ul>
+    </div>
+</div>
+</div>
+</body>
+
+<script>
+    var thing = document.getElementsByClassName("sections_Titles");
+    function myFunction(event) {
+        var id= this.id;
+                for (var i = 0; i < el.length; i++) {
+            el[i].children[0].style.display= "none"
+        }
+        var neew = document.getElementById("selectedTitle").removeAttribute("id");
+        if (this != neew ){
+            this.setAttribute("id", "selectedTitle");
+        }
+        el = document.getElementById("content").children;
+        for (var i = 0; i < el.length; i++) {
+            el[i].children[0].style.display= "none"
+        }
+           
+        document.getElementById(id+"_content").style.display = "block";
+    }
+
+    for (var i = 0; i < thing.length; i++) {
+        thing[i].addEventListener("click", myFunction);
+    }
+    </script>
+</html>

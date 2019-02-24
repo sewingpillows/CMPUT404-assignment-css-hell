@@ -1,0 +1,89 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color:#00ffba;
+}
+.starter {
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/hubbleimage1p1611a1r.jpg");
+    display: flex;
+    height:-webkit-fill-available;
+    flex-direction: column;
+    align-content: center;
+}
+.wrapper {
+	  display: flex;
+	  flex-direction: column;
+}
+
+.photo {
+   align-self: center;
+   animation: alien 12s infinite;
+   width: 300px;
+   padding-top: 40px;
+}
+.photo img{
+  width: 100%;
+}
+.th{
+	width: 50%;
+	background-color: coral;
+	 align-self: center;
+	 margin: 10px;
+}
+p {
+	padding: 0 20px;
+}
+
+#content{
+	    display: flex;
+    height:-webkit-fill-available;
+    flex-direction: column;
+    align-content: center;
+}
+
+.section {
+	display: flex;
+	justify-content: center;
+}
+
+.sections_Title{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	font-family: cursive;
+	text-transform: uppercase;
+	color: #FF5722;
+	background-color: #fbe204;
+	font-size: 1.5em;
+	border-radius: 5px;
+	border-style: double;}
+
+.sections_Title li{
+	padding: 0 20px;
+	font-weight: 900;
+	line-height: 4em;
+}
+#selectedTitle {
+	color: #9C27B0;
+
+}
+
+.name {
+  font-family: cursive;
+  font-weight: 900;
+  color: #00ffbf;
+  font-size: 8em;
+  align-self: center;
+  text-shadow: 3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+@keyframes alien {
+  0%  {filter:hue-rotate(13deg) contrast(200%);}
+  25%   {filter:hue-rotate(1333deg) contrast(200%);}
+  50%    {filter:hue-rotate(133deg) contrast(200%);}
+  100%   { filter:hue-rotate(2000deg) contrast(200%);}
+}

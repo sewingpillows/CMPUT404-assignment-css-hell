@@ -1,0 +1,124 @@
+.title_section{
+    background: #485765;
+}
+.title {
+    color: #f5e390;
+    font-family: 'Bevan', cursive;
+    font-size: 6em;
+    line-height: normal;
+    letter-spacing: 2px;
+    padding-top: -10;
+    text-shadow: 3px 3px #878396f2;
+    text-align: center;
+}
+.small_title {
+    font-size: .5em;
+    color: #f1e5e5;
+    text-shadow: 3px 3px #878396f2;
+}
+
+.content_menu .title_section{
+    background: #485765;
+}
+.title {
+    color: #f5e390;
+    font-family: 'Bevan', cursive;
+    font-size: 4em;
+    line-height: normal;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    display: block;
+    line-height:1;
+    text-shadow: 3px 3px #878396f2;
+    text-align: center;
+}
+.small_title {
+    font-size: .5em;
+    color: #f1e5e5;
+    text-shadow: 3px 3px #878396f2;
+    /* margin-bottom: -40px; */
+}
+
+#content_menu_check input[type="checkbox"] {
+    /* display: none; */
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.toc input[type="checkbox"]:checked + .menu-content{
+    max-height: 100%;
+    background: chocolate;
+}
+.content_menu {
+    background: lightblue;
+    width: 150px; 
+}
+.content_menu p {
+    font-size: .75em;
+    font-family: 'Roboto', sans-serif;
+    color: brown;
+}
+
+.body_text{
+    background: grey;
+    font-family:'EB Garamond', serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.content_wrapper{
+    display: flex;
+    width: fit-content;
+}
+
+.inner_content{
+    display: flex;
+    flex-direction: row;
+}
+
+
+    background: lightblue;
+    width: 150px; 
+}
+.content_menu p {
+    font-size: .75em;
+    font-family: 'Roboto', sans-serif;
+    color: brown;
+}
+.chapter{
+    border-bottom-color: #778ca0;
+    border-width: 2px;
+    border-style: hidden hidden solid hidden;
+    height: fit-content;
+    text-align: center;
+}
+
+.body_text{
+    background: white;
+    font-family:'EB Garamond', serif;
+    max-width: 700px;
+    align: center;
+    line-height: 1.35em;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.content_wrapper{
+    display: flex;
+    width: fit-content;
+}
+
+.inner_content{
+    display: flex;
+    flex-direction: row;
+}
+
