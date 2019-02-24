@@ -144,7 +144,7 @@ top;
 }
 .sections_Titles::before {
   animation: crossbut 3s;
-  border-bottom: 1px solid #CC4E5F
+  border-bottom: 1px solid #CC4E5F;
   transform: skewY(-10deg) translateY(-20px);
 }
 .sections_Titles::after {
@@ -159,7 +159,7 @@ top;
 }
 .selectedTitle.sections_Titles::before {
   animation: uncrossbut 3s;
-  border-bottom: 1px solid #CC4E5F
+  border-bottom: 1px solid #CC4E5F;
   transform: skewY(0deg) translateY(0px);
 }
 @keyframes crosstop {
