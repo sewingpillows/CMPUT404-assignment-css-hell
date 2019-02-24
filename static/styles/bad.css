@@ -14,7 +14,9 @@ body {
 	  display: flex;
 	  flex-direction: column;
 }
-
+.footer{
+	height: 30px;
+}
 h1 {
 	position: absolute;
 	width: 100%;
