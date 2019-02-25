@@ -16,6 +16,9 @@ body {
 }
 .footer{
 	height: 30px;
+	font-size: .8em;
+	color:#404040;
+	line-height: 3eml
 }
 h1 {
 	position: absolute;
