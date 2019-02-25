@@ -182,10 +182,8 @@ h4, h5{
   }
   
   .dir {
-    text-indent: 8%;
-    padding-top: 0px;
-    margin: 1px;
-    color:#7b7b7b
+    margin: 10 0 0 10;
+    color:#7b7b7b;
   }
 
   .figcenter {
@@ -206,7 +204,8 @@ h4, h5{
   }
 
   .play p{
-    line-height: .98em;
+    line-height: .1em;
+    height: auto;
   }
 
  .full+h3{
