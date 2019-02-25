@@ -54,8 +54,7 @@ p {
 }
 
 #content{
-	    display: flex;
-    height:-webkit-fill-available;
+	display: flex;
     flex-direction: column;
     align-content: center;
 }
