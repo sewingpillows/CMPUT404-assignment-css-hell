@@ -20,6 +20,10 @@ body {
 	color:#404040;
 	line-height: 3eml
 }
+
+.footer a{
+	color:#404040;
+  }
 h1 {
 	position: absolute;
 	width: 100%;
