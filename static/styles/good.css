@@ -1,5 +1,5 @@
 .header {
-  height: 310px;
+  height: 300px;
   position: relative;
   background-color: #CC4E5F;
 }
@@ -113,19 +113,15 @@ align-content: center;
 font-size: .8em;
 top: 100px;
 width: 100%;
-top;
 }
-
 .exclaim{
   font-size: 4em;
   color:white;
 }
-
 .sections_Titles{
   position: relative;
   display: inline-block;
 }
-
 .sections_Titles::after {
   content: '';
   width: 100%;
@@ -170,7 +166,6 @@ top;
 0% {transform: skewY(0) translateY(0);}
 100% {transform: skewY(-10deg) translateY(-20px);}
 }
-
 @keyframes uncrosstop {
 0% {transform: skewY(10deg) translateY(50%);}
 100% {transform: skewY(0) translateY(0);}
